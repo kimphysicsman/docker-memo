@@ -11,4 +11,6 @@ ADD templates templates
 
 ADD app.py .
 
+ADD utils.py .
+
 CMD ["python", "app.py"]
