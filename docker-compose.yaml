@@ -1,15 +1,15 @@
 version: "3.9"
 services:
   flask:
-    image: kimphysicsman/docker-memo:latest
+    image: "kimphysicsman/docker-memo:latest"
     ports:
-      - 80:5000
+      - "80:5000"
   mongo:
-    image: mongo
+    image: "mongo:latest"
     volumes:
-      - mongo:/data/db/
+      - "mongo:/data/db"
     ports:
-      - 27017:27017
+      - "27017:27017"
 
 volumes:
   mongo:
